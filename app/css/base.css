@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 2px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  */
+    font-family: 'Oswald', sans-serif;
+    color: rgb(244, 184, 5);
+    background-color: #e53d40;
+   
+
+}
+
+body{
+    background-color: #e53d40;
+;
+}
+header{
+    background-color: #c63235;
+    height: 8 vh;
+}
+
+main{
+    background-color: #e53d40;
+    height: 8 vh;
+}
+
+footer{
+    background-color: #e53d40;
+    height: 8 vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 1 vh;
+}
+
+.bt-classico{
+    padding: 8px;
+    margin: 2px;
+    border: 0.1px solid black;
+    font-size: 15px;
+    border-radius: 8px;
+
+    
+}
