@@ -40,7 +40,7 @@ function Home() {
           </div>
           <div className="hero-image">
             <img
-              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/ry3gkz0m_grok-image-45b09b39-5c6e-44ea-a98d-10c63fca27b0%282%29.jpg"
+              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/g209pbw9_grok-image-42b92456-51af-4fe7-af55-15c19cc806c0.jpg"
               alt="Matheus Oliveira - Psicólogo"
             />
           </div>
@@ -52,7 +52,7 @@ function Home() {
         <div className="sobre-content">
           <div className="sobre-image">
             <img
-              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/g209pbw9_grok-image-42b92456-51af-4fe7-af55-15c19cc806c0.jpg"
+              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/ry3gkz0m_grok-image-45b09b39-5c6e-44ea-a98d-10c63fca27b0%282%29.jpg"
               alt="Matheus Oliveira em consultório"
             />
           </div>
