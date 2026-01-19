@@ -61,10 +61,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-full);
-  background-color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
@@ -73,11 +73,13 @@
   transition: var(--transition);
   z-index: 10;
   color: var(--color-text);
+  opacity: 0.7;
 }
 
 .carousel-btn:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  opacity: 1;
+  background-color: var(--color-white);
+  color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
@@ -114,8 +116,8 @@
   }
 
   .carousel-btn {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
   }
 
   .area-card {
@@ -127,10 +129,6 @@
 @media (max-width: 480px) {
   .carousel-track-container {
     margin: 0 var(--spacing-md);
-  }
-
-  .carousel-btn {
-    display: none;
   }
 
   .area-card {
