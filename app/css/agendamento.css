@@ -240,6 +240,21 @@
 }
 
 @media (max-width: 640px) {
+  .agendamento {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .pergunta-card {
+    padding: var(--spacing-lg);
+  }
+
+  .input-field,
+  .textarea-field,
+  .opcao-btn {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+
   .navegacao-btns {
     flex-direction: column-reverse;
   }

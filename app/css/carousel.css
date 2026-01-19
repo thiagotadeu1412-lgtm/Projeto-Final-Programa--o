@@ -126,6 +126,15 @@
 
 @media (max-width: 480px) {
   .carousel-track-container {
-    margin: 0 var(--spacing-lg);
+    margin: 0 var(--spacing-md);
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+
+  .area-card {
+    min-height: 220px;
+    padding: var(--spacing-md);
   }
 }

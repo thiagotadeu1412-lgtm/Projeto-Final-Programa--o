@@ -185,6 +185,22 @@
 }
 
 @media (max-width: 640px) {
+  .sobre-hero,
+  .sobre-bio,
+  .sobre-filosofia,
+  .sobre-credenciais,
+  .sobre-cta {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+  }
+
+  .bio-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .filosofia-content p {
+    text-align: left;
+  }
+
   .credenciais-grid {
     grid-template-columns: 1fr;
     max-width: 300px;

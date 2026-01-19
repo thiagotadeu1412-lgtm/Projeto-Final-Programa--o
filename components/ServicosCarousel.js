@@ -2,30 +2,25 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import '../app/css/carousel.css';
 
-const areasAtuacao = [
+const servicos = [
   {
-    titulo: 'Angústia',
-    descricao: 'Trabalho focado na compreensão e elaboração dos sentimentos de angústia, buscando ressignificar experiências e encontrar caminhos para o alívio emocional.',
-    icone: '💭'
+    titulo: 'Psicoterapia Individual',
+    descricao: 'Sessões individuais de psicoterapia com abordagem psicanalítica, focadas no autoconhecimento e bem-estar emocional.',
+    icone: '🧠',
   },
   {
-    titulo: 'Ansiedade',
-    descricao: 'Acompanhamento terapêutico para compreender as raízes da ansiedade e desenvolver estratégias para lidar com suas manifestações no dia a dia.',
-    icone: '🌊'
+    titulo: 'Atendimento Online',
+    descricao: 'Sessões realizadas de forma remota, proporcionando conforto e acessibilidade para você de qualquer lugar.',
+    icone: '💻',
   },
   {
-    titulo: 'Depressão',
-    descricao: 'Suporte psicológico para enfrentar o sofrimento depressivo, promovendo o autoconhecimento e a reconexão com o sentido da vida.',
-    icone: '🌱'
+    titulo: 'Escuta Psicanalítica',
+    descricao: 'Espaço de escuta atenta e acolhedora, onde você pode expressar livremente seus pensamentos e emoções.',
+    icone: '👂',
   },
-  {
-    titulo: 'Luto e Perdas',
-    descricao: 'Espaço acolhedor para elaborar perdas significativas e encontrar formas de ressignificar a dor, respeitando o tempo de cada um.',
-    icone: '🕊️'
-  }
 ];
 
-function Carousel() {
+function ServicosCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
 
@@ -45,7 +40,7 @@ function Carousel() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const maxIndex = Math.max(0, areasAtuacao.length - itemsPerView);
+  const maxIndex = Math.max(0, servicos.length - itemsPerView);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -61,12 +56,12 @@ function Carousel() {
   }, [nextSlide]);
 
   return (
-    <div className="carousel-container" data-testid="carousel">
+    <div className="carousel-container" data-testid="servicos-carousel">
       <button
         className="carousel-btn prev"
         onClick={prevSlide}
         aria-label="Slide anterior"
-        data-testid="carousel-prev"
+        data-testid="servicos-carousel-prev"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
@@ -80,17 +75,17 @@ function Carousel() {
             transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
           }}
         >
-          {areasAtuacao.map((area, index) => (
+          {servicos.map((servico, index) => (
             <div
               key={index}
               className="carousel-item"
               style={{ flex: `0 0 ${100 / itemsPerView}%` }}
-              data-testid={`carousel-item-${index}`}
+              data-testid={`servicos-carousel-item-${index}`}
             >
               <div className="area-card">
-                <span className="area-icon">{area.icone}</span>
-                <h4>{area.titulo}</h4>
-                <p>{area.descricao}</p>
+                <span className="area-icon">{servico.icone}</span>
+                <h4>{servico.titulo}</h4>
+                <p>{servico.descricao}</p>
               </div>
             </div>
           ))}
@@ -101,14 +96,14 @@ function Carousel() {
         className="carousel-btn next"
         onClick={nextSlide}
         aria-label="Próximo slide"
-        data-testid="carousel-next"
+        data-testid="servicos-carousel-next"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
       </button>
 
-      <div className="carousel-dots" data-testid="carousel-dots">
+      <div className="carousel-dots" data-testid="servicos-carousel-dots">
         {Array.from({ length: maxIndex + 1 }).map((_, index) => (
           <button
             key={index}
@@ -122,4 +117,4 @@ function Carousel() {
   );
 }
 
-export default Carousel;
+export default ServicosCarousel;

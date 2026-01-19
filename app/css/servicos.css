@@ -216,3 +216,26 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 640px) {
+  .servicos-hero,
+  .servicos-lista,
+  .publico-alvo,
+  .como-funciona,
+  .servicos-cta {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+  }
+
+  .servico-item {
+    padding: var(--spacing-lg);
+  }
+
+  .servico-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .servico-item h2 {
+    font-size: 1.25rem;
+  }
+}

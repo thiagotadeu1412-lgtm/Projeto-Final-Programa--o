@@ -139,6 +139,12 @@
 }
 
 @media (max-width: 640px) {
+  .faq-hero,
+  .faq-lista,
+  .faq-cta {
+    padding: var(--spacing-2xl) var(--spacing-sm);
+  }
+
   .faq-pergunta {
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: 0.95rem;

@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Carousel from '../components/Carousel';
+import ServicosCarousel from '../components/ServicosCarousel';
 import './css/home.css';
 
 function Home() {
@@ -94,23 +95,7 @@ function Home() {
       <section className="servicos" data-testid="servicos-section">
         <span className="section-label">SERVIÇOS</span>
         <h2>Como posso ajudar</h2>
-        <div className="servicos-grid">
-          <div className="servico-card">
-            <div className="servico-icon">🧠</div>
-            <h3>Psicoterapia Individual</h3>
-            <p>Sessões individuais de psicoterapia com abordagem psicanalítica, focadas no autoconhecimento e bem-estar emocional.</p>
-          </div>
-          <div className="servico-card">
-            <div className="servico-icon">💻</div>
-            <h3>Atendimento Online</h3>
-            <p>Sessões realizadas de forma remota, proporcionando conforto e acessibilidade para você de qualquer lugar.</p>
-          </div>
-          <div className="servico-card">
-            <div className="servico-icon">👂</div>
-            <h3>Escuta Psicanalítica</h3>
-            <p>Espaço de escuta atenta e acolhedora, onde você pode expressar livremente seus pensamentos e emoções.</p>
-          </div>
-        </div>
+        <ServicosCarousel />
       </section>
 
       {/* Áreas de Atendimento Section */}
