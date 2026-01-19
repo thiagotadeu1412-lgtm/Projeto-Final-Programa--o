@@ -75,7 +75,7 @@ Pedido.belongsToMany(Jogos, { through: ItemPedido, onDelete: 'CASCADE' });
 Jogos.belongsToMany(Pedido, { through: ItemPedido, onDelete: 'CASCADE' });
 
 
-await mysql.sync({ force: true });
+await mysql.sync();
 
 
 export { Jogos, Usuarios, Funcionario, Cliente, Pedido, ItemPedido, mysql};

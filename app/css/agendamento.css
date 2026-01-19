@@ -1,0 +1,250 @@
+/* ===== AGENDAMENTO PAGE ===== */
+.agendamento {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  padding: var(--spacing-2xl) var(--spacing-md);
+}
+
+.agendamento-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.agendamento-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.agendamento-header h1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.agendamento-header p {
+  color: var(--color-text-light);
+}
+
+/* Progress Bar */
+.progress-container {
+  margin-bottom: var(--spacing-xl);
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--spacing-xs);
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  display: block;
+  text-align: center;
+}
+
+/* Pergunta Card */
+.pergunta-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.pergunta-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  transition: var(--transition);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+.textarea-field {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  resize: vertical;
+  min-height: 150px;
+  transition: var(--transition);
+}
+
+.textarea-field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+/* Opções de Seleção */
+.opcoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.opcao-btn {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  color: var(--color-text-muted);
+}
+
+.opcao-btn:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+.opcao-btn.selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Erro */
+.erro-msg {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: var(--spacing-sm);
+}
+
+/* Navegação */
+.navegacao-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.btn-nav {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-nav.prev {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+}
+
+.btn-nav.prev:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-nav.prev:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-nav.next {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+}
+
+.btn-nav.next:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Sucesso Card */
+.sucesso-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.sucesso-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-success);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.sucesso-card h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.sucesso-card p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.sucesso-info {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-lg);
+}
+
+.sucesso-card .btn-primary {
+  margin-bottom: var(--spacing-sm);
+}
+
+.sucesso-card .btn-secondary {
+  display: block;
+  width: 100%;
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 640px) {
+  .navegacao-btns {
+    flex-direction: column-reverse;
+  }
+
+  .btn-nav {
+    width: 100%;
+  }
+}
