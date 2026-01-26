@@ -6,7 +6,7 @@ import '../app/css/menu.css';
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const message = 'Olá! Gostaria de agendar uma consulta.';
-  const whatsappUrl = `https://wa.me/5533998779353?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/5531971466033?text=${encodeURIComponent(message)}`;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

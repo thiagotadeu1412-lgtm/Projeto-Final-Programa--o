@@ -4,7 +4,7 @@ import Link from 'next/link';
 import '../app/css/footer.css';
 
 function Footer() {
-  const phoneNumber = '5533998779353';
+  const phoneNumber = '5531971466033';
   const message = 'Olá! Gostaria de agendar uma consulta.';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

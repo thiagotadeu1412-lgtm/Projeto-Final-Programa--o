@@ -45,7 +45,7 @@ const publicoAlvo = [
 
 function Servicos() {
   const message = 'Olá! Gostaria de agendar uma consulta.';
-  const agendarUrl = `https://wa.me/5533998779353?text=${encodeURIComponent(message)}`;
+  const agendarUrl = `https://wa.me/5531971466033?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="servicos-page" data-testid="servicos-page">

@@ -116,7 +116,7 @@ function Agendamento() {
   };
 
   const enviarParaWhatsApp = () => {
-    const phoneNumber = '5533998779353';
+    const phoneNumber = '5531971466033';
 
     const nome = respostas[1] || 'Não informado';
     const idade = respostas[2] || 'Não informado';

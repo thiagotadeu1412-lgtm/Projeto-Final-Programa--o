@@ -47,7 +47,7 @@ const perguntas = [
 
 function FAQ() {
   const message = 'Olá! Gostaria de agendar uma consulta.';
-  const agendarUrl = `https://wa.me/5533998779353?text=${encodeURIComponent(message)}`;
+  const agendarUrl = `https://wa.me/5531971466033?text=${encodeURIComponent(message)}`;
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
