@@ -22,7 +22,7 @@ function Sobre() {
         <div className="bio-container">
           <div className="bio-image">
             <img
-              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/g209pbw9_grok-image-42b92456-51af-4fe7-af55-15c19cc806c0.jpg"
+              src="Gemini_Generated_Image_l41hpil41hpil41h.png"
               alt="Matheus Oliveira em consultório"
             />
           </div>

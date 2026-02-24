@@ -61,7 +61,7 @@ function Home() {
         <div className="sobre-content">
           <div className="sobre-image">
             <img
-              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/ry3gkz0m_grok-image-45b09b39-5c6e-44ea-a98d-10c63fca27b0%282%29.jpg"
+              src="Gemini_Generated_Image_rdrt7rrdrt7rrdrt.png"
               alt="Matheus Oliveira em consultório"
             />
           </div>
