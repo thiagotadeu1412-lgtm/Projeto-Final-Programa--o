@@ -13,8 +13,23 @@ function Home() {
   return (
     <div className="home" data-testid="home-page">
       {/* Hero Section */}
-      <section className="hero" data-testid="hero-section">
-        <div className="hero-content">
+      <section className="hero" data-testid="hero-section" style={{ position: 'relative', overflow: 'hidden' }}>
+        <div className="hero-background" style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: 0,
+          opacity: 0.1
+        }}>
+          <img
+            src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/g209pbw9_grok-image-42b92456-51af-4fe7-af55-15c19cc806c0.jpg"
+            alt="Matheus Oliveira - Psicólogo"
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="hero-content" style={{ position: 'relative', zIndex: 1 }}>
           <div className="hero-text">
             <h1>
               Psicoterapia com<br />
@@ -37,12 +52,6 @@ function Home() {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="hero-image">
-            <img
-              src="https://customer-assets.emergentagent.com/job_web-styling/artifacts/g209pbw9_grok-image-42b92456-51af-4fe7-af55-15c19cc806c0.jpg"
-              alt="Matheus Oliveira - Psicólogo"
-            />
           </div>
         </div>
       </section>

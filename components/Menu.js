@@ -36,8 +36,7 @@ function Menu() {
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`} data-testid="nav-links">
         <Link href="/" onClick={() => setIsMenuOpen(false)} data-testid="nav-inicio">Início</Link>
         <Link href="/sobre" onClick={() => setIsMenuOpen(false)} data-testid="nav-sobre">Sobre</Link>
-        <Link href="/servicos" onClick={() => setIsMenuOpen(false)} data-testid="nav-servicos">Serviços</Link>
-        <Link href="/faq" onClick={() => setIsMenuOpen(false)} data-testid="nav-faq">Perguntas Frequentes</Link>
+        <Link href="/faq" onClick={() => setIsMenuOpen(false)} data-testid="nav-faq">Dúvidas</Link>
         <a
           href={whatsappUrl}
           target="_blank"

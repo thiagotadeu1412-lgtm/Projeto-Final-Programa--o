@@ -10,6 +10,9 @@ export const metadata = {
   title: 'Matheus Oliveira - Psicólogo Clínico | CRP 04/81415',
   description: 'Psicoterapia com escuta acolhedora e empática. Atendimento online com abordagem psicanalítica. Agende sua consulta.',
   keywords: 'psicólogo, psicoterapia, psicanálise, terapia online, atendimento psicológico, CRP 04/81415',
+  icons: {
+    icon: '/Design sem nome.ICO',
+  },
 }
 
 export default function RootLayout({ children }) {
