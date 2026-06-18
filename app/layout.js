@@ -18,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
+      <head> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SGH49B5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> </head>
       <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SGH49B5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <Menu />
         <main>{children}</main>
         <Footer />
