@@ -122,7 +122,7 @@ function Home() {
       <section className="cta-section" data-testid="cta-section">
         <div className="cta-content">
           <h2>Pronto para começar sua jornada?</h2>
-          <p>O primeiro passo é o mais importante. Entre em contato e agende sua consulta.</p>
+          <p>O primeiro passo é o mais importante. Entre em contato e agende sua consulta agora mesmo.</p>
           <a
             href={agendarUrl}
             target="_blank"
